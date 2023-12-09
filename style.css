@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.rectangle{
+    background-color: goldenrod;
+    width: 460px;
+  
+    margin: auto;
+}
+.rectangle .header{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.header img{
+    width: 150px;
+}
+.header .start-animation{
+    animation: rotation infinite  5s linear;
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.controls{background-color: aliceblue;
+}
+.header h1{font-weight: normal;
+text-transform: capitalize;}
+.header p{
+    font-size: 1.5em;
+    color: #333;
+    margin-top: 10px;
+}
+.controls .icom-control{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.controls .box-line{
+
+ 
+    padding: 20px;
+    margin-bottom: 10px;
+}
+.controls .line{
+    width: 100%;  
+     position: relative;
+    height: 2px;
+    background-color: #ddd;
+}
+.controls .line::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 140px;
+    height: 2px;
+    background-color: rgb(12, 13, 13);
+}
+.controls .line::after{
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: 140px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: rgb(12, 13, 13);
+}
+.controls .icom-control img{
+    width: 60px;
+}
+
+.controls h2{
+    font-weight: normal;
+    text-transform: capitalize;
+    text-align: center;
+}.controls input[type="range" i]{
+    -webkit-appearance: none;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.controls input[type="range" i]::-webkit-slider-thumb{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #f65b79;
+    -webkit-appearance: none;
+}
+.buttons{
+    text-align: center;
+    /* margin-top: 50px; */
+}
+.buttons button{
+    border-radius: 50%;
+    width: 20px;
+    border: none;
+    height: 20px;
+margin: 0 6px;
+}
+.buttons button.grreen{
+    background-color: #009688;
+}
+.buttons button.blue{
+    background-color: #ff5353;
+}
+.buttons button.black{
+    background-color: #212020;
+}
+.buttons button.red{
+    background-color: #967000;
+}
+.buttons button.yellow{
+    background-color:#7f9600;
+}
+.buttons button.silver{
+    background-color: #222a4c;
+}
